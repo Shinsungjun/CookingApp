@@ -9,7 +9,7 @@
     <item
         android:id="@+id/navigation_refri"
         android:icon="@android:drawable/ic_menu_help"
-        android:title="REFREI" />
+        android:title="REFREEI" />
 
     <item
         android:id="@+id/navigation_info"
