@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="539dp" />
+        app:layout_constraintGuide_begin="584dp" />
 
     <Space
         android:id="@+id/space_location_top"
@@ -70,33 +70,27 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_view"
         android:layout_width="360dp"
-        android:layout_height="103dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_marginTop="46dp"
-        android:layout_marginBottom="55dp"
         android:background="?android:attr/windowBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/grid_main"
-        app:layout_constraintVertical_bias="0.464"
         app:menu="@menu/menu_bottom" />
 
     <GridView
         android:id="@+id/grid_main"
-        android:layout_width="360dp"
-        android:layout_height="471dp"
+        android:layout_width="361dp"
+        android:layout_height="546dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.403">
+        app:layout_constraintVertical_bias="0.402">
 
     </GridView>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
