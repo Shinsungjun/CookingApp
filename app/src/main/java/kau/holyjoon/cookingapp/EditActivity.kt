@@ -1,6 +1,7 @@
 package kau.holyjoon.cookingapp
 
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.edit_main.*
@@ -14,7 +15,14 @@ class EditActivity : AppCompatActivity() {
 
         aboutView()
     }
+
     private fun aboutView(){
-        text_myCook.text = "메모화면"
+        bt_plus.setOnClickListener{ //메모버튼 눌렀을때
+            openPlusActivity()
+        }
+    }
+    private fun openPlusActivity() {
+        val startIntent = Intent(this, PlusActivity::class.java)
+        startActivity(startIntent)
     }
 }
