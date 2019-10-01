@@ -9,7 +9,7 @@ package kau.holyjoon.cookingapp
 //EditActivity로 넘길것이다.
 //EditActivity에서는 조건을 만족하는 정보 (적어도 재료와 방법에 대한 데이터가 존재)가 넘어온다면 Recipe객체를 만들어 해당 데이터를 저장하고
 //RecyclerView를 통해 보여준다.
-class Recipe(ingredients : Array<String>, howmake : String, cooktime : Int?) {  //시간은 null이 가능하게 아니면 그냥 0 으로 두고 null일 수 없게 만드는 것도 방법
+class Recipe(ingredients : Array<String>,comment : String, howmake : String, cooktime : Int?) {  //시간은 null이 가능하게 아니면 그냥 0 으로 두고 null일 수 없게 만드는 것도 방법
     var ingredients :Array<String> = ingredients
     var howmake : String = howmake
     var cooktime : Int? = cooktime  //요리에 있어, 재료와 조리법이 존재하지 않을 수 없기 때문에 ingredients와 howmake는 null이 될 수 없다.

@@ -26,6 +26,7 @@ class PlusActivity :AppCompatActivity() {   //+ 버튼 클릭 시 나타나는 p
         val gridView : GridView = findViewById(R.id.grid_image)
         val texthow : TextView = findViewById(R.id.edit_how)
         val texttime : TextView = findViewById(R.id.edit_time)
+        val comment : TextView = findViewById(R.id.edit_comment)
 
         val intent : Intent = getIntent()
         aboutView()

@@ -23,8 +23,8 @@
 
     <GridView
         android:id="@+id/grid_image"
-        android:layout_width="298dp"
-        android:layout_height="196dp"
+        android:layout_width="295dp"
+        android:layout_height="166dp"
         android:layout_marginStart="2dp"
         android:layout_marginLeft="2dp"
         android:layout_marginTop="56dp"
@@ -86,15 +86,14 @@
         android:id="@+id/bt_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="63dp"
         android:layout_marginBottom="16dp"
         android:text="CANCEL"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.424"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_how"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_how" />
 
     <Button
         android:id="@+id/bt_done"
@@ -106,5 +105,20 @@
         android:text="done"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="설명"
+        app:layout_constraintBottom_toTopOf="@+id/bt_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_how" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
