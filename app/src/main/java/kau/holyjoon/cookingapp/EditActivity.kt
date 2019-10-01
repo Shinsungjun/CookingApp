@@ -26,7 +26,7 @@ class EditActivity : AppCompatActivity() {
         }
     }
     private fun openPlusActivity() { //근데 dialog라서 Activity 취급이 아닌거같아
-        val builder = AlertDialog.Builder(this)
+       /* val builder = AlertDialog.Builder(this)
         val dialogView = layoutInflater.inflate(R.layout.plus_popup,null)
         val dialoghow = dialogView.findViewById<EditText>(R.id.edit_how)
         val dialogtime = dialogView.findViewById<EditText>(R.id.edit_time)
@@ -41,10 +41,10 @@ class EditActivity : AppCompatActivity() {
             .setNegativeButton("CANCEL") {dialogInterface, i ->
 
             }
-            .show()
-
-
-
+            .show()*/
+        //!!위의 dialog부르는건 activity가 아니라서 더 햇갈려가지고 그냥 Activity를 Dialog처럼 띄우는걸로 했음.!!
+        val intent = Intent (this, PlusActivity::class.java)
+        startActivityForResult(intent,1)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
