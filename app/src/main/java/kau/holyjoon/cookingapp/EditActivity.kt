@@ -11,6 +11,14 @@ import android.widget.ListView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.edit_main.*
+import androidx.recyclerview.widget.LinearLayoutManager
+import android.R
+import androidx.recyclerview.widget.RecyclerView
+import androidx.core.app.ComponentActivity.ExtraData
+import androidx.core.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+
+
 
 
 class EditActivity : AppCompatActivity() {
@@ -20,12 +28,18 @@ class EditActivity : AppCompatActivity() {
         setContentView(R.layout.edit_main)
 
         aboutView()
+        //RecyclerView 어댑터, 레이아웃 매니저 설정(하는중)
+        /*var recipeList = arrayListOf<memo>()
 
-        val memos = arrayOf(getData())
-        val list:ListView=findViewById(R.id.editlist)
-        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1,memos)
 
-        list.adapter = adapter
+        val Adapter1 = listAdapter(this, recipeList)
+        recycler1.adapter = Adapter1
+
+        val lm = LinearLayoutManager(this)
+        recycler1.layoutManager = lm
+        recycler1.setHasFixedSize(true)
+
+        var recipeList = arrayListOf<memo>(*/
     }
 
     private fun aboutView(){
