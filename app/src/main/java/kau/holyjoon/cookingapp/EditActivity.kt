@@ -62,3 +62,4 @@ class EditActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
     }
 }
+
