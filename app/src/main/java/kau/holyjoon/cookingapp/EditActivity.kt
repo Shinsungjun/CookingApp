@@ -5,7 +5,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ArrayAdapter
 import android.widget.EditText
+import android.widget.ListView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.edit_main.*
@@ -18,12 +20,21 @@ class EditActivity : AppCompatActivity() {
         setContentView(R.layout.edit_main)
 
         aboutView()
+
+        val memos = arrayOf(getData())
+        val list:ListView=findViewById(R.id.editlist)
+        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1,memos)
+
+        list.adapter = adapter
     }
 
     private fun aboutView(){
         bt_plus.setOnClickListener{ //메모버튼 눌렀을때
             openPlusActivity()
         }
+    }
+    private fun getData(){
+        intent.getStringExtra("texthow")
     }
     private fun openPlusActivity() { //근데 dialog라서 Activity 취급이 아닌거같아
        /* val builder = AlertDialog.Builder(this)

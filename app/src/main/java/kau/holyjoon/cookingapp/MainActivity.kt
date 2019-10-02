@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.edit_main.*
 
 class MainActivity : AppCompatActivity() {  //내가 지금까지 만든 요리를 보여주는 홈화면
 
@@ -12,6 +13,8 @@ class MainActivity : AppCompatActivity() {  //내가 지금까지 만든 요리�
         setContentView(R.layout.activity_main)
 
         aboutView()
+
+
     }
     private fun aboutView(){
         bt_edit.setOnClickListener{ //메모버튼 눌렀을때
